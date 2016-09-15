@@ -1,0 +1,12 @@
+{
+  "name": "heartbeat",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prestart": "npm i",
+    "start": "./node_modules/.bin/aws-cloudwatch-forwarder 'node index.js'"
+  },
+  "dependencies": {
+    "aws-cloudwatch-forwarder": "1.0.0"
+  }
+}
